@@ -12,8 +12,8 @@ Deploy with
 
 ```
 hugo -D
-aws s3 sync public s3://biobricks.ai --profile insilica
-aws cloudfront create-invalidation --distribution-id E2739YSAG8CXB8 --paths /*
+aws s3 sync public s3://docs.sysrev.com
+aws cloudfront create-invalidation --distribution-id EA1FHUI2SBWO4 --paths "/*"
 ```
 
 1. Install hugo `brew install hugo`
