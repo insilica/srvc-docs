@@ -1,8 +1,8 @@
-public/
+.*
+!.editorconfig
+!.envrc
+!.github
+!.gitignore
 
-# BLOGDOWN
-.hugo_build.lock
-/resources/
-.Rproj.user
-.Rhistory
-.Rdata
+public/
+resources
