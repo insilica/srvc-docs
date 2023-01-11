@@ -6,15 +6,19 @@ Use this repository to make SRVC or sysrev.com related feature requests and bug 
 
 Check existing issues at [github.com/sysrev/srvc-docs/issues](https://github.com/sysrev/srvc-docs/issues)
 
-# Developers
+# Deploy
 
-Deploy with
+Deploy by pushing to main branch, or manually with:
 
 ```
 hugo -D
 aws s3 sync public s3://docs.sysrev.com
 aws cloudfront create-invalidation --distribution-id EA1FHUI2SBWO4 --paths "/*"
 ```
+
+# Install
+
+Use nix and direnv, or install manually with homebrew:
 
 1. Install hugo `brew install hugo`
 2. Check version `hugo version` should be `hugo v0.101.0+extended linux/amd64`
