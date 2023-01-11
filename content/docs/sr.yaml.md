@@ -12,14 +12,14 @@ db: "sink.jsonl" # where to store review data
 labels:
   include:
     type: boolean
-    question: should this article be included?
+    question: Should this article be included?
 
 flows:
   simple:
     steps:
-      - run_embedded: "generator-file data/docs.jsonl"
-      - run_embedded: "remove-reviewed"
-      - run_embedded: "label"
+      - run-embedded: generator data/docs.jsonl
+      - run-embedded: remove-reviewed
+      - run-embedded: label
         labels: [ include ]
 ```
 

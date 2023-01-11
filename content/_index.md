@@ -7,8 +7,7 @@ Sysrev Version Control is an open source document review system. Every SRVC revi
 
 1. Install `sr` with [homebrew](https://brew.sh/):
    ```plaintext
-   $ brew tap insilica/brew
-   $ brew install srvc
+   $ brew install insilica/srvc/srvc
    ```
 2. Clone the [srvc-hello](https://github.com/sysrev/srvc-hello) example review
    ```plaintext
