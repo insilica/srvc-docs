@@ -1,13 +1,21 @@
 ---
-Title: Remove reviewed
+title: label-web
 ---
 
-This step skips documents that have already been assigned answers by the reviewer.
+The label-web step provides a web interface for a reviewer to assign answers to documents.
 The step follows this format:
 
 ```yaml
-      - run-embedded: remove-reviewed
+      - run-embedded: label-web
+        labels: [include, category]
+        port: 5005
 ```
+
+The `labels` property defines which labels to show in the interface.
+
+The `port` property sets the port number for the web server to listen on.
+It is optional.
+If omitted, the server will listen on an arbitrary free port.
 
 Example `sr.yaml`:
 
